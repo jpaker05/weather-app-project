@@ -4,7 +4,7 @@ function searchCity(event) {
   let h2 = document.querySelector("h2");
   h2.innerHTML = `${searchInput.value}`;
   let cityName = `${searchInput.value}`;
-  let apiKey = "28483fb0bac69b11e99890f72d1b1c8f ";
+  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
   axios.get(url).then(getTemperature);
 }
@@ -28,7 +28,7 @@ function showCurrentLocation(position) {
   console.log(position.coords.latitude);
   console.log(position.coords.longitude);
 
-  let apiKey = "28483fb0bac69b11e99890f72d1b1c8f";
+  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
   let url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
