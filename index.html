@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div class="container">
+      <div class="weather-app">
     <h1>
       <form id="search-form">
         <input
@@ -48,48 +50,35 @@
       Tuesday, August 30, 2022 <br />
       05:37
     </h3>
-    <div class="description">sunny</div>
-    <div class="condition"></div>
-    <ul>
-      <li>Humiditiy:<span id="humiditiy">10</span>%</li>
-      <li>Wind:<span id="wind">10</span>km/h</li>
-    </ul>
-    <h4>
-     <div class=temp-links>
-    <span class="temp" id="temp">
-      17 </span>
-    <span class= "degrees">
-    <a href="#" id= "celcius"> °C </a>/
-    <a href =#" id= "fahrenheit"> °F </a>
-    </span>
-  </div>
-  </h4>
+             <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  ><span class="units"> °C</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> m/h</li>
+              </ul>
+            </div>
+          </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-2">
-          Mon
-          <i class="fa-solid fa-sun"></i>
-        </div>
-        <div class="col-2">
-          Tue
-          <i class="fa-solid fa-sun"></i>
-        </div>
-        <div class="col-2">
-          Wed
-          <i class="fa-solid fa-cloud-bolt"></i>
-        </div>
-        <div class="col-2">
-          Thurs
-          <i class="fa-solid fa-cloud-sun-rain"></i>
-        </div>
-        <div class="col-2">
-          Fri
-          <i class="fa-solid fa-cloud-showers-heavy"></i>
-        </div>
-      </div>
-      <a href="https://github.com/jpaker05/weather-app-project"> Coded by Jessica Paker</a>
-    </div>
+    <p>
+    <a href="https://github.com/jpaker05/weather-app-project"> Coded by Jessica Paker</a>
+    </p>
+  </div>
+</div>
+</div>
     <script src="src/index.js"></script>
   </body>
 </html>
